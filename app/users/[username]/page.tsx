@@ -21,6 +21,8 @@ import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import EditUser from "@/components/EditUser";
+import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
+import AppLineChart from "@/components/AppLineChart";
 const UsersDetailPage = () => {
 	return (
 		<div>
@@ -156,9 +158,28 @@ const UsersDetailPage = () => {
 				{/* RIGHT */}
 				<div className="w-full xl:w-2/3 flex flex-col gap-4">
 					{/* USER CARD CONTAINER */}
-					<div className="bg-primary-foreground p-4 rounded-lg">User Card</div>
+					<div className="bg-primary-foreground p-4 rounded-lg">
+						<div className="flex items-center gap-2">
+							<Avatar className="size-12">
+								<AvatarImage src="https://github.com/shadcn.png" />
+								<AvatarFallback>GS</AvatarFallback>
+							</Avatar>
+							<h1 className="text-xl font-semibold">Gokhan Sucuz</h1>
+						</div>
+						<p className="text-sm text-muted-foreground mt-4">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quis
+							totam possimus sint corrupti exercitationem non rem odit ratione,
+							veniam dolore alias amet blanditiis a doloribus magni?
+							Voluptatibus vero laboriosam explicabo repellat illum a
+							dignissimos, ut tempore doloremque quaerat iste sunt tenetur sequi
+							quo nulla expedita officiis labore omnis dolor.
+						</p>
+					</div>
 					{/* CHART CONTAINER */}
-					<div className="bg-primary-foreground p-4 rounded-lg">Chart</div>
+					<div className="bg-primary-foreground p-4 rounded-lg">
+						<h1 className="text-xl font-semibold">User Activity</h1>
+						<AppLineChart />
+					</div>
 				</div>
 			</div>
 		</div>

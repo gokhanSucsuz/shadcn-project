@@ -25,8 +25,7 @@ import { SidebarTrigger } from "./ui/sidebar";
 const Navbar = () => {
 	const { setTheme } = useTheme();
 	// const { toggleSidebar } = useSidebar();
-	return (
-		<nav className="flex p-4 items-center justify-between">
+	return <nav className="flex p-4 items-center justify-between sticky top-0 bg-background z-10">
 			<SidebarTrigger className="cursor-pointer" />
 			{/* <Button variant="outline" onClick={toggleSidebar}>
 				<ToggleLeftIcon className="h-4 w-4" />
@@ -57,12 +56,7 @@ const Navbar = () => {
 				<DropdownMenu>
 					<DropdownMenuTrigger className="cursor-pointer rounded-full">
 						<Avatar>
-							<AvatarImage
-								className="h-8 w-8 rounded-full"
-								src={
-									"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFW0NbncSWEnZ83TNSs2LnzrIvoLcDCBU2pw&s"
-								}
-							/>
+							<AvatarImage className="h-8 w-8 rounded-full" src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFW0NbncSWEnZ83TNSs2LnzrIvoLcDCBU2pw&s"} />
 							<AvatarFallback>CN</AvatarFallback>
 						</Avatar>
 					</DropdownMenuTrigger>
@@ -84,8 +78,7 @@ const Navbar = () => {
 					</DropdownMenuContent>
 				</DropdownMenu>
 			</div>
-		</nav>
-	);
+		</nav>;
 };
 
 export default Navbar;
