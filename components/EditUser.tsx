@@ -53,18 +53,13 @@ const EditUser = () => {
 		}
 	});
 
-	return (
-		<SheetContent>
+	return <SheetContent>
 			<SheetHeader>
 				<SheetTitle className="mb-4">Edit User</SheetTitle>
 				<SheetDescription asChild>
 					<Form {...form}>
 						<form className="space-y-8">
-							<FormField
-								control={form.control}
-								name="username"
-								render={({ field }) =>
-									<FormItem>
+							<FormField control={form.control} name="username" render={({ field }) => <FormItem>
 										<FormLabel>Username</FormLabel>
 										<FormControl>
 											<Input {...field} />
@@ -73,13 +68,8 @@ const EditUser = () => {
 											This is your public username.
 										</FormDescription>
 										<FormMessage />
-									</FormItem>}
-							/>
-							<FormField
-								control={form.control}
-								name="email"
-								render={({ field }) =>
-									<FormItem>
+									</FormItem>} />
+							<FormField control={form.control} name="email" render={({ field }) => <FormItem>
 										<FormLabel>Email</FormLabel>
 										<FormControl>
 											<Input {...field} />
@@ -88,13 +78,8 @@ const EditUser = () => {
 											Only admin can see your email.
 										</FormDescription>
 										<FormMessage />
-									</FormItem>}
-							/>
-							<FormField
-								control={form.control}
-								name="phone"
-								render={({ field }) =>
-									<FormItem>
+									</FormItem>} />
+							<FormField control={form.control} name="phone" render={({ field }) => <FormItem>
 										<FormLabel>Phone</FormLabel>
 										<FormControl>
 											<Input {...field} />
@@ -103,13 +88,8 @@ const EditUser = () => {
 											Only admin can see your phone number.
 										</FormDescription>
 										<FormMessage />
-									</FormItem>}
-							/>
-							<FormField
-								control={form.control}
-								name="location"
-								render={({ field }) =>
-									<FormItem>
+									</FormItem>} />
+							<FormField control={form.control} name="location" render={({ field }) => <FormItem>
 										<FormLabel>Location</FormLabel>
 										<FormControl>
 											<Input {...field} />
@@ -118,13 +98,8 @@ const EditUser = () => {
 											This is the public location.
 										</FormDescription>
 										<FormMessage />
-									</FormItem>}
-							/>
-							<FormField
-								control={form.control}
-								name="role"
-								render={({ field }) =>
-									<FormItem>
+									</FormItem>} />
+							<FormField control={form.control} name="role" render={({}) => <FormItem>
 										<FormLabel>Role</FormLabel>
 										<FormControl>
 											<Select>
@@ -141,15 +116,13 @@ const EditUser = () => {
 											Only verified users can be admin.
 										</FormDescription>
 										<FormMessage />
-									</FormItem>}
-							/>
+									</FormItem>} />
 							<Button type="submit">Submit</Button>
 						</form>
 					</Form>
 				</SheetDescription>
 			</SheetHeader>
-		</SheetContent>
-	);
+		</SheetContent>;
 };
 
 export default EditUser;
