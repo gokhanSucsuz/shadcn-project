@@ -16,8 +16,7 @@ import {
 	SidebarMenuSub,
 	SidebarMenuSubButton,
 	SidebarMenuSubItem,
-	SidebarSeparator,
-	useSidebar
+	SidebarSeparator
 } from "@/components/ui/sidebar";
 
 import {
@@ -29,9 +28,7 @@ import {
 	User2,
 	ChevronUp,
 	Plus,
-	ChevronsUpDown,
-	Projector,
-	ChevronsUp
+	Projector
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -51,7 +48,6 @@ import {
 	CollapsibleContent,
 	CollapsibleTrigger
 } from "@/components/ui/collapsible";
-import { Button } from "./ui/button";
 
 const items = [
 	{
