@@ -7,7 +7,13 @@ import {
 	BreadcrumbPage,
 	BreadcrumbSeparator
 } from "@/components/ui/breadcrumb";
+import {
+	HoverCard,
+	HoverCardContent,
+	HoverCardTrigger
+} from "@/components/ui/hover-card";
 import CardList from "@/components/CardList";
+import { BadgeCheck, Candy, Citrus, Shield } from "lucide-react";
 const UsersDetailPage = () => {
 	return (
 		<div>
@@ -31,7 +37,67 @@ const UsersDetailPage = () => {
 				{/* LEFT */}
 				<div className="w-full xl:w-1/3 flex flex-col gap-4">
 					{/* USER BADGES CONTAINER */}
-					<div className="bg-primary-foreground p-4 rounded-lg">Badge</div>
+					<div className="bg-primary-foreground p-4 rounded-lg">
+						<h1 className="text-xl font-semibold">User Badges</h1>
+						<div className="flex gap-4 mt-4">
+							<HoverCard>
+								<HoverCardTrigger>
+									<BadgeCheck
+										size={36}
+										className="rounded-full bg-blue-500/30 border-1 border-blue-500/50 p-2"
+									/>
+								</HoverCardTrigger>
+								<HoverCardContent align="start">
+									<h1 className="font-bold mb-2">Verified User</h1>
+									<p className="text-sm text-muted-foreground">
+										This user has been verified by the admin.
+									</p>
+								</HoverCardContent>
+							</HoverCard>
+							<HoverCard>
+								<HoverCardTrigger>
+									<Shield
+										size={36}
+										className="rounded-full bg-green-500/30 border-1 border-green-500/50 p-2"
+									/>
+								</HoverCardTrigger>
+								<HoverCardContent align="start">
+									<h1 className="font-bold mb-2">Verified User</h1>
+									<p className="text-sm text-muted-foreground">
+										This user has been verified by the admin.
+									</p>
+								</HoverCardContent>
+							</HoverCard>
+							<HoverCard>
+								<HoverCardTrigger>
+									<Candy
+										size={36}
+										className="rounded-full bg-yellow-500/30 border-1 border-yellow-500/50 p-2"
+									/>
+								</HoverCardTrigger>
+								<HoverCardContent align="start">
+									<h1 className="font-bold mb-2">Verified User</h1>
+									<p className="text-sm text-muted-foreground">
+										This user has been verified by the admin.
+									</p>
+								</HoverCardContent>
+							</HoverCard>
+							<HoverCard>
+								<HoverCardTrigger>
+									<Citrus
+										size={36}
+										className="rounded-full bg-orange-500/30 border-1 border-orange-500/50 p-2"
+									/>
+								</HoverCardTrigger>
+								<HoverCardContent align="start">
+									<h1 className="font-bold mb-2">Verified User</h1>
+									<p className="text-sm text-muted-foreground">
+										This user has been verified by the admin.
+									</p>
+								</HoverCardContent>
+							</HoverCard>
+						</div>
+					</div>
 					{/* INFORMATION CONTAINER */}
 					<div className="bg-primary-foreground p-4 rounded-lg">Info</div>
 					{/* CARD LIST CONTAINER */}
