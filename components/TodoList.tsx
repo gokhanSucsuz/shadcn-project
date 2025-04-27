@@ -14,9 +14,8 @@ import { format } from "date-fns/format";
 const TodoList = () => {
 	const [date, setDate] = useState<Date | undefined>(new Date());
 	const [open, setOpen] = useState(false);
-	return (
-		<div>
-			<h1 className="text-lg font-medium mb-6">Todo List</h1>
+	return <div>
+			<h1 className="text-lg font-medium mb-6">Todo Lists</h1>
 			<Popover open={open} onOpenChange={setOpen}>
 				<PopoverTrigger asChild>
 					<Button variant="default" className="w-full">
@@ -25,15 +24,10 @@ const TodoList = () => {
 					</Button>
 				</PopoverTrigger>
 				<PopoverContent className="w-auto p-0">
-					<Calendar
-						mode="single"
-						selected={date}
-						onSelect={date => {
+					<Calendar mode="single" selected={date} onSelect={date => {
 							setDate(date);
 							setOpen(false);
-						}}
-						className="rounded-md border"
-					/>
+						}} className="rounded-md border" />
 				</PopoverContent>
 			</Popover>
 
@@ -43,10 +37,7 @@ const TodoList = () => {
 						<div className="items-top flex space-x-2">
 							<Checkbox id="item1" checked />
 							<div className="grid gap-1.5 leading-none">
-								<label
-									htmlFor="item1"
-									className="text-sm text-muted-foreground"
-								>
+								<label htmlFor="item1" className="text-sm text-muted-foreground">
 									Accept terms and conditions
 								</label>
 							</div>
@@ -56,10 +47,7 @@ const TodoList = () => {
 						<div className="items-top flex space-x-2">
 							<Checkbox id="item1" checked />
 							<div className="grid gap-1.5 leading-none">
-								<label
-									htmlFor="item1"
-									className="text-sm text-muted-foreground"
-								>
+								<label htmlFor="item1" className="text-sm text-muted-foreground">
 									Accept terms and conditions
 								</label>
 							</div>
@@ -69,10 +57,7 @@ const TodoList = () => {
 						<div className="items-top flex space-x-2">
 							<Checkbox id="item1" checked />
 							<div className="grid gap-1.5 leading-none">
-								<label
-									htmlFor="item1"
-									className="text-sm text-muted-foreground"
-								>
+								<label htmlFor="item1" className="text-sm text-muted-foreground">
 									Accept terms and conditions
 								</label>
 							</div>
@@ -82,10 +67,7 @@ const TodoList = () => {
 						<div className="items-top flex space-x-2">
 							<Checkbox id="item1" checked />
 							<div className="grid gap-1.5 leading-none">
-								<label
-									htmlFor="item1"
-									className="text-sm text-muted-foreground"
-								>
+								<label htmlFor="item1" className="text-sm text-muted-foreground">
 									Accept terms and conditions
 								</label>
 							</div>
@@ -95,10 +77,7 @@ const TodoList = () => {
 						<div className="items-top flex space-x-2">
 							<Checkbox id="item1" checked />
 							<div className="grid gap-1.5 leading-none">
-								<label
-									htmlFor="item1"
-									className="text-sm text-muted-foreground"
-								>
+								<label htmlFor="item1" className="text-sm text-muted-foreground">
 									Accept terms and conditions
 								</label>
 							</div>
@@ -108,10 +87,7 @@ const TodoList = () => {
 						<div className="items-top flex space-x-2">
 							<Checkbox id="item1" checked />
 							<div className="grid gap-1.5 leading-none">
-								<label
-									htmlFor="item1"
-									className="text-sm text-muted-foreground"
-								>
+								<label htmlFor="item1" className="text-sm text-muted-foreground">
 									Accept terms and conditions
 								</label>
 							</div>
@@ -121,10 +97,7 @@ const TodoList = () => {
 						<div className="items-top flex space-x-2">
 							<Checkbox id="item1" checked />
 							<div className="grid gap-1.5 leading-none">
-								<label
-									htmlFor="item1"
-									className="text-sm text-muted-foreground"
-								>
+								<label htmlFor="item1" className="text-sm text-muted-foreground">
 									Accept terms and conditions
 								</label>
 							</div>
@@ -134,10 +107,7 @@ const TodoList = () => {
 						<div className="items-top flex space-x-2">
 							<Checkbox id="item1" />
 							<div className="grid gap-1.5 leading-none">
-								<label
-									htmlFor="item1"
-									className="text-sm text-muted-foreground"
-								>
+								<label htmlFor="item1" className="text-sm text-muted-foreground">
 									Accept terms and conditions
 								</label>
 							</div>
@@ -147,10 +117,7 @@ const TodoList = () => {
 						<div className="items-top flex space-x-2">
 							<Checkbox id="item1" />
 							<div className="grid gap-1.5 leading-none">
-								<label
-									htmlFor="item1"
-									className="text-sm text-muted-foreground"
-								>
+								<label htmlFor="item1" className="text-sm text-muted-foreground">
 									Accept terms and conditions
 								</label>
 							</div>
@@ -160,10 +127,7 @@ const TodoList = () => {
 						<div className="items-top flex space-x-2">
 							<Checkbox id="item1" />
 							<div className="grid gap-1.5 leading-none">
-								<label
-									htmlFor="item1"
-									className="text-sm text-muted-foreground"
-								>
+								<label htmlFor="item1" className="text-sm text-muted-foreground">
 									Accept terms and conditions
 								</label>
 							</div>
@@ -173,10 +137,7 @@ const TodoList = () => {
 						<div className="items-top flex space-x-2">
 							<Checkbox id="item1" />
 							<div className="grid gap-1.5 leading-none">
-								<label
-									htmlFor="item1"
-									className="text-sm text-muted-foreground"
-								>
+								<label htmlFor="item1" className="text-sm text-muted-foreground">
 									Accept terms and conditions
 								</label>
 							</div>
@@ -186,10 +147,7 @@ const TodoList = () => {
 						<div className="items-top flex space-x-2">
 							<Checkbox id="item1" />
 							<div className="grid gap-1.5 leading-none">
-								<label
-									htmlFor="item1"
-									className="text-sm text-muted-foreground"
-								>
+								<label htmlFor="item1" className="text-sm text-muted-foreground">
 									Accept terms and conditions
 								</label>
 							</div>
@@ -199,10 +157,7 @@ const TodoList = () => {
 						<div className="items-top flex space-x-2">
 							<Checkbox id="item1" />
 							<div className="grid gap-1.5 leading-none">
-								<label
-									htmlFor="item1"
-									className="text-sm text-muted-foreground"
-								>
+								<label htmlFor="item1" className="text-sm text-muted-foreground">
 									Accept terms and conditions
 								</label>
 							</div>
@@ -212,10 +167,7 @@ const TodoList = () => {
 						<div className="items-top flex space-x-2">
 							<Checkbox id="item1" />
 							<div className="grid gap-1.5 leading-none">
-								<label
-									htmlFor="item1"
-									className="text-sm text-muted-foreground"
-								>
+								<label htmlFor="item1" className="text-sm text-muted-foreground">
 									Accept terms and conditions
 								</label>
 							</div>
@@ -225,10 +177,7 @@ const TodoList = () => {
 						<div className="items-top flex space-x-2">
 							<Checkbox id="item1" />
 							<div className="grid gap-1.5 leading-none">
-								<label
-									htmlFor="item1"
-									className="text-sm text-muted-foreground"
-								>
+								<label htmlFor="item1" className="text-sm text-muted-foreground">
 									Accept terms and conditions
 								</label>
 							</div>
@@ -236,8 +185,7 @@ const TodoList = () => {
 					</Card>
 				</div>
 			</ScrollArea>
-		</div>
-	);
+		</div>;
 };
 
 export default TodoList;
